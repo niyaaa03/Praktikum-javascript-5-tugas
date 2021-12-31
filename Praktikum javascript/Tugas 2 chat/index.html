@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <div class="chat" id="chat">
+    </div>
+    <div class="form" id="form">
+      <input type="text" id="message" name="message" placeholder="Masukkan pesan...">
+      <button onclick="kirimPesan()">Kirim</button>
+    </div>
+  </div>
+
+  <script>
+    function kirimPesan() {
+      let ele = document.getElementById("chat");
+      let msg = document.getElementById("message").value;
+
+      if (msg) {
+        ele.innerHTML += `${msg} <br>`;
+      };
+      
+      document.getElementById("message").value = "";
+    }
+  </script>
+</body>
+</html>

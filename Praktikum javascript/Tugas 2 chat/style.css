@@ -1,0 +1,23 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  width: 100%;
+  height: 500px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.chat {
+  padding: 8px;
+  border: 1px solid grey;
+  height: 450px;
+  font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.form {
+  padding: 5px;
+  border: 1px solid black;
+}
+input {
+  width: 92%;
+}
